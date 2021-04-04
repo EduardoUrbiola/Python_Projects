@@ -5,8 +5,8 @@ rock = '🪨'
 paper = '📄'
 scissors = '✂️'
 
-print('Welcome to the 🪨, 📄 or ✂️ game!')
-player = input('\n🪨, 📄 or ✂️ ? ').capitalize()
+print('\nWelcome to the 🪨, 📄, ✂️  game!')
+player = input('\nChoose 🪨, 📄 or ✂️ ? ').capitalize()
 random_number = randint(0,2)
 
 if player == 'Rock':
