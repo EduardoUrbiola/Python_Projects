@@ -44,11 +44,3 @@ elif player == scissors:
 		print('Computer wins!\n')
 else:
 	print('Please write a valid item\n')
-
-
-
-
-
-
-
-
