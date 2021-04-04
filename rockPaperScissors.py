@@ -5,7 +5,7 @@ rock = '🪨'
 paper = '📄'
 scissors = '✂️'
 
-
+print('Welcome to the 🪨, 📄 or ✂️ game!')
 player = input('\n🪨, 📄 or ✂️ ? ').capitalize()
 random_number = randint(0,2)
 
