@@ -4,6 +4,8 @@ from random import randint
 rock = '🪨'
 paper = '📄'
 scissors = '✂️'
+no_response = 'no response'
+unable_to_play = 'no item since player didn\'t chose either'
 
 print('\nWelcome to the 🪨, 📄, ✂️  game!')
 player = input('\nChoose 🪨, 📄 or ✂️ ? ').capitalize()
@@ -13,16 +15,21 @@ if player == 'Rock':
 	player = rock
 elif player == 'Paper':
 	player = paper
-else: 
+elif player == 'Scissors':
 	player = scissors
+elif player != 'Rock' or 'Paper' or 'Scissors':
+	player = no_response
 print(f'\nPlayer chose {player}')
 
-if random_number == 0:
+if random_number == 0 or random_number == 1 or random_number == 2 and player != 'Rock' or 'Paper' or 'Scissors':
+	computer = unable_to_play
+elif random_number == 0:
 	computer = rock
 elif random_number == 1:
 	computer = paper
-else: 
+elif random_number == 2:
 	computer = scissors
+
 print(f'Computer chose {computer}\n')
 
 if player == computer:
